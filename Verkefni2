@@ -1,0 +1,51 @@
+1. Hér er dæmi um “function decleration” og kall á fallið. Afhverju virkar eftirfarandi kóði í
+JavaScript, útskýrðu?
+
+Í javascript er hægt að kalla á ákveðið fall áður en það fallið hefur verið skilgreint, þetta kallast Function Hoisting
+
+2. Í hvaða röð er kóðinn keyrður í raun eftir að þýðandinn (e. interpreter) er búinn að fá hann til
+sín? Hvað birtir alert(), afhverju? 
+
+interpreterinn keyrir niður kóðann línu fyrir línu og endar á því að skilgreina bar sem 8
+
+3. Í hvaða röð er kóðinn keyrður í raun eftir að þýðandinn (e. interpreter) er búinn að fá hann til
+sín? Hvað birtir alert(), afhverju?
+
+þýðandinn byrjar á því að hoista bar sem skilar 3 en svo hoistar hann neðri breytuna sem er líka bar þannig hann endurskilgreinir bar og ´bar verður þá 8.  Alert skilar 8
+
+4. Hægt er búa til fall m.a. með 'function expressions' eða 'function declarations'. Hvort ætti maður
+að nota, afhverju?
+
+function declaration loadar inn áður en browserinn keyrir kóðann en function expression loadar þegar interpreterinn er kominn á línuna sem functioninn er skrifaður
+
+5. Hvað gerist þegar ég gleymi að skilgreina breytu með var? Útskýrðu hvað gerist
+
+það verður hægt að nota breytuna fyrir utan það scope sem hún var sett í
+
+6. Útskýrðu hvað eftirfarandi kóði gerir, hvað gera svigarnir?
+
+functionið alertar 'hello world'.  svigarnir gera scope og þetta verður function expression
+
+7. Afhverju virkar eftirfarandi kóðabútur með óskilgreindu breytunni, útskýrðu?
+
+útaf því að kóðabúturinn er að nota 'or' og þá velur hann fyrri valmöguleikann ef hann er ekki stilltur á null eða tómur.
+
+8. Útskýrðu hvers vegna úttakið er “hello world” 
+
+originalFunction er 'Hello world' og svo gerir hann nýja breytu sem heitir copiedFunction sem verður nákvæmlega eins og originalFunction áður en hann breytir originalFunction í 'goodbye world' og kallar svo á copiedFunction
+
+9. Útskýrðu úttak:
+
+
+
+10. Hvað er call stack og hvað er heap?
+
+
+
+11. Hvað er callback, komdu með lítið dæmi og útskýrðu
+
+
+
+12. Hvað þýða eftirfarandi hugtök í JavaScript?
+
+
