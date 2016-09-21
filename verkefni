@@ -1,0 +1,43 @@
+1) family.parents.fathers[1].name
+
+
+3)
+function Geimflaug () {
+}
+Geimflaug.prototype.name = "SpaceRacer";
+Geimflaug.prototype.life = 10;
+Geimflaug.prototype.speed = 5;
+Geimflaug.prototype.showName = function () {
+	console.log("þetta er " + this.name);
+}
+var geimflaug1 = new Geimflaug;
+var geimflaug2 = new Geimflaug;
+var geimflaug3 = new Geimflaug;
+
+geimflaug1.name = "SpaceCruiser";
+
+Geimflaug.prototype.fly = function () {
+	this.Geimflaug.prototype.speed += 1;
+}
+
+var geimflaug4 = new Geimflaug;
+geimflaug4.shoot = function () {
+	geimflaug4.life -= 1;
+}
+
+
+for (var prop in geimflaug1 ){
+	console.log("geimflaug1" + prop + " = " + geimflaug1[prop]);
+}
+
+for (var prop in geimflaug2 ){
+	console.log("geimflaug2" + prop + " = " + geimflaug2[prop]);
+}
+
+for (var prop in geimflaug3 ){
+	console.log("geimflaug3" + prop + " = " + geimflaug3[prop]);
+}
+
+for (var prop in geimflaug4 ){
+	console.log("geimflaug4" + prop + " = " + geimflaug4[prop]);
+}
